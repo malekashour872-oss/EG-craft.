@@ -1,0 +1,14 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fov": 70.0,
+  "render_distance": 4,
+  "master_volume": 0.8,
+  "sfx": 1.0,
+  "music": 0.4,
+  "sensitivity": 0.0022,
+  "fullscreen": false,
+  "seed": 12345,
+  "vsync": true,
+  "mouse_sensitivity": 0.0022
+}

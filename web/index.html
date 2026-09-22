@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0a080e" />
+  <meta name="description" content="EG Craft — لعبة صندوق الرمال العربية. ملكية مالك حسن عاشور © 2025." />
+  <title>EG Craft — ملكية مالك حسن عاشور</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       EG Craft — Source template for the web bundle
+
+       This file is NOT served directly. It is kept as a reference for
+       the mobile UI elements that scripts/post_build.py injects INTO
+       pygbag's auto-generated index.html during the build.
+
+       pygbag generates its own index.html (with the WASM loader, apk
+       mount logic, canvas, etc.). post_build.py then injects the
+       mobile UI (splash, touch controls, hotbar) from this file into
+       pygbag's index.html. The result is a single index.html that
+       combines both: pygbag's loading mechanism + EG Craft's mobile UI.
+
+       To customise the mobile UI, edit scripts/post_build.py (the
+       MOBILE_CSS and MOBILE_HTML constants).
+       ═══════════════════════════════════════════════════════════════════════ -->
+
+  <h1>EG Craft — web/index.html (source template)</h1>
+  <p>
+    هذا الملف قالب مصدر فقط — لا يُخدم مباشرة. يتم دمج عناصره في
+    index.html المُولّد بواسطة pygbag عبر <code>scripts/post_build.py</code>.
+  </p>
+  <p>
+    This is a source template only — it is not served directly. Its
+    elements are merged into pygbag's generated index.html by
+    <code>scripts/post_build.py</code>.
+  </p>
+
+  <!-- The actual mobile UI elements that get injected:
+       - #egc-loader (splash screen with EG Craft branding)
+       - #egc-touch (joystick + action buttons)
+       - #egc-fs (fullscreen button)
+       See scripts/post_build.py → MOBILE_HTML constant.
+  -->
+</body>
+</html>

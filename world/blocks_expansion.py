@@ -1,0 +1,280 @@
+# ═══ EG Craft ═══
+# Copyright (c) 2025 Malik Hassan Ashour (مالك حسن عاشور). All rights reserved.
+# Proprietary software. Copying, distribution, or modification without
+# written permission is prohibited.
+# هذا الملف مملوك ملكية مالك حسن عاشور — يُمنع النسخ أو التوزيع دون إذن
+
+"""Commercial expansion block IDs and item IDs.
+
+Spec ref: extension to §6.2 — adds new block IDs (21+) and item IDs
+(200+) without replacing any spec values. Documented in
+DECISIONS.md → L-2.
+
+Split out of world/blocks.py per §17.4 (max 400 lines per file).
+"""
+from __future__ import annotations
+
+
+# ─────────────────────────────────────────────────────────────
+# Expansion block IDs (21+)
+# ─────────────────────────────────────────────────────────────
+ID_OBSIDIAN        = 21
+ID_NETHERRACK      = 22
+ID_END_STONE       = 23
+ID_GLOWSTONE       = 24
+ID_SOUL_SAND       = 25
+ID_BRICKS          = 26
+ID_SANDSTONE       = 27
+ID_SNOW            = 28
+ID_ICE             = 29
+ID_CACTUS          = 30
+ID_PUMPKIN         = 31
+ID_NETHER_PORTAL   = 32
+ID_END_PORTAL      = 33
+ID_BOOKSHELF       = 34
+ID_JUKEBOX         = 35
+ID_BREWING_STAND   = 36
+ID_ENCHANTING_TABLE = 37
+ID_LEVER           = 38
+ID_REDSTONE_LAMP   = 39
+ID_REDSTONE_WIRE   = 40
+ID_REDSTONE_TORCH  = 41
+ID_REPEATER        = 42
+ID_PISTON          = 43
+ID_STICKY_PISTON   = 44
+ID_FURNACE_LIT     = 45
+ID_ANVIL           = 46
+ID_CAULDRON        = 47
+ID_LOOM            = 48
+ID_CARTOGRAPHY_TABLE = 49
+ID_SMITHING_TABLE  = 50
+ID_GRINDSTONE      = 51
+ID_STONECUTTER     = 52
+ID_BELL            = 53
+ID_LANTERN         = 54
+ID_DRAGON_EGG      = 55
+ID_BED_RED         = 56
+ID_BUCKET_WATER    = 57
+ID_BUCKET_LAVA     = 58
+ID_LAVA            = 59
+ID_CRYING_OBSIDIAN = 60
+ID_RESPAWN_ANCHOR  = 61
+ID_NETHERITE_BLOCK = 62
+ID_AMETHYST         = 63
+ID_BUDDING_AMETHYST = 64
+ID_LARGE_AMETHYST_BUD = 65
+ID_MEDIUM_AMETHYST_BUD = 66
+ID_SMALL_AMETHYST_BUD = 67
+ID_DEEPSLATE       = 68
+ID_DEEPSLATE_COAL_ORE = 69
+ID_DEEPSLATE_IRON_ORE = 70
+ID_DEEPSLATE_GOLD_ORE = 71
+ID_DEEPSLATE_DIAMOND_ORE = 72
+ID_DEEPSLATE_EMERALD_ORE = 73
+ID_EMERALD_ORE     = 74
+ID_EMERALD_BLOCK   = 75
+ID_RAW_IRON_BLOCK  = 76
+ID_RAW_GOLD_BLOCK  = 77
+ID_DRIPSTONE       = 78
+ID_POINTED_DRIPSTONE = 79
+ID_MOSS_BLOCK      = 80
+ID_AZALEA          = 81
+ID_FLOWERING_AZALEA = 82
+ID_SPORE_BLOSSOM   = 83
+ID_BIG_DRIPLEAF    = 84
+ID_SMALL_DRIPLEAF  = 85
+ID_ROOTED_DIRT     = 86
+ID_HANGING_ROOTS   = 87
+ID_POWDER_SNOW     = 88
+ID_CALCITE         = 89
+ID_TUFF            = 90
+ID_BASALT          = 91
+ID_BLACKSTONE      = 92
+ID_GILDED_BLACKSTONE = 93
+ID_POLISHED_BLACKSTONE = 94
+ID_NETHER_GOLD_ORE = 95
+ID_QUARTZ_ORE      = 96
+ID_MAGMA_BLOCK     = 98
+ID_TARGET          = 99
+ID_NOTE_BLOCK      = 100
+
+# Slabs
+ID_OAK_SLAB        = 130
+ID_STONE_SLAB      = 131
+ID_COBBLE_SLAB     = 132
+ID_BRICK_SLAB      = 133
+ID_STONE_BRICK_SLAB = 134
+
+# Stairs
+ID_OAK_STAIRS      = 140
+ID_STONE_STAIRS    = 141
+ID_COBBLE_STAIRS   = 142
+ID_BRICK_STAIRS    = 143
+ID_STONE_BRICK_STAIRS = 144
+
+# Doors & fence
+ID_OAK_DOOR        = 150
+ID_IRON_DOOR       = 151
+ID_OAK_FENCE       = 152
+ID_NETHER_BRICK_FENCE = 153
+
+# Glass panes + iron bars
+ID_GLASS_PANE      = 160
+ID_IRON_BARS       = 161
+
+# Pressure plates + buttons
+ID_STONE_PRESSURE_PLATE = 170
+ID_OAK_PRESSURE_PLATE   = 171
+ID_STONE_BUTTON          = 172
+ID_OAK_BUTTON            = 173
+
+# Rails
+ID_RAIL            = 180
+ID_POWERED_RAIL    = 181
+ID_DETECTOR_RAIL   = 182
+ID_ACTIVATOR_RAIL  = 183
+
+# Decoration
+ID_FLOWER_RED      = 190
+ID_FLOWER_YELLOW  = 191
+ID_FLOWER_BLUE    = 192
+ID_TALL_GRASS     = 193
+ID_MUSHROOM_RED   = 194
+ID_MUSHROOM_BROWN = 195
+ID_VINE           = 196
+ID_LILY_PAD       = 197
+ID_DEAD_BUSH      = 198
+ID_FERN           = 199
+
+
+# ─────────────────────────────────────────────────────────────
+# Expansion item IDs (200+)
+# ─────────────────────────────────────────────────────────────
+ITEM_NETHERITE_INGOT  = 200
+ITEM_NETHERITE_SCRAP  = 201
+ITEM_EMERALD          = 202
+ITEM_QUARTZ           = 203
+ITEM_AMETHYST_SHARD   = 204
+ITEM_BUCKET            = 205
+ITEM_WATER_BUCKET      = 206
+ITEM_LAVA_BUCKET        = 207
+ITEM_MILK_BUCKET        = 208
+ITEM_COD               = 209
+ITEM_SALMON             = 210
+ITEM_TROPICAL_FISH      = 211
+ITEM_PUFFERFISH         = 212
+ITEM_COOKED_COD         = 213
+ITEM_COOKED_SALMON      = 214
+ITEM_MELON_SLICE        = 215
+ITEM_BAKED_POTATO       = 216
+ITEM_POTATO             = 217
+ITEM_BREAD              = 218
+ITEM_COOKIE             = 219
+ITEM_CAKE               = 220
+ITEM_PUMPKIN_PIE        = 221
+ITEM_APPLE              = 222
+ITEM_GOLDEN_APPLE       = 223
+ITEM_ENCHANTED_GOLDEN_APPLE = 224
+ITEM_SUGAR              = 225
+ITEM_PAPER              = 226
+ITEM_BOOK               = 227
+ITEM_ENCHANTED_BOOK     = 228
+ITEM_WRITABLE_BOOK      = 229
+ITEM_WRITTEN_BOOK       = 230
+ITEM_MAP                = 231
+ITEM_COMPASS            = 232
+ITEM_CLOCK              = 233
+ITEM_SPYGLASS            = 234
+ITEM_ENDER_PEARL        = 235
+ITEM_ENDER_EYE          = 236
+ITEM_EYE_OF_ENDER       = 237
+ITEM_BLAZE_ROD          = 238
+ITEM_GHAST_TEAR         = 239
+ITEM_NETHER_STAR        = 240
+ITEM_PRISMARINE_SHARD   = 241
+ITEM_PRISMARINE_CRYSTALS = 242
+ITEM_SHULKER_SHELL       = 243
+ITEM_TURTLE_SCUTE        = 244
+ITEM_PHANTOM_MEMBRANE    = 245
+ITEM_HEART_OF_THE_SEA   = 246
+ITEM_NAUTILUS_SHELL     = 247
+ITEM_CONDUIT             = 248
+ITEM_DRAGON_BREATH       = 249
+ITEM_ELDER_GUARDIAN_SPIKE = 250
+ITEM_TOTEM_OF_UNDYING    = 251
+ITEM_SHULKER_BOX         = 252
+ITEM_FLOWER_POT          = 253
+ITEM_NAME_TAG            = 254
+ITEM_SADDLE              = 255
+ITEM_LEAD                = 256
+ITEM_HORSE_ARMOR_IRON    = 257
+ITEM_HORSE_ARMOR_GOLD    = 258
+ITEM_HORSE_ARMOR_DIAMOND = 259
+ITEM_SHEARS              = 260
+ITEM_FLINT_AND_STEEL     = 261
+ITEM_FLINT               = 262
+ITEM_FIRE_CHARGE         = 263
+ITEM_END_CRYSTAL         = 264
+ITEM_DRAGON_HEAD         = 265
+ITEM_TURTLE_HELMET       = 266
+ITEM_TRIDENT             = 267
+ITEM_SHIELD              = 268
+ITEM_BOW                 = 269
+ITEM_CROSSBOW            = 270
+ITEM_ARROW_TIPPED         = 271
+ITEM_FIREWORK_ROCKET      = 272
+ITEM_FIREWORK_STAR         = 273
+ITEM_ENCHANTED_CARROT_ON_STICK = 274
+ITEM_WARPED_FUNGUS_ON_STICK    = 275
+ITEM_CARROT_ON_STICK           = 276
+ITEM_GLOW_INK_SAC              = 277
+ITEM_INK_SAC                   = 278
+ITEM_LAPIS_LAZULI               = 279
+ITEM_HONEY_BOTTLE              = 280
+ITEM_HONEYCOMB                  = 281
+ITEM_HONEY_BLOCK                 = 282
+
+# Potion IDs (300+)
+ITEM_POTION = 300
+ITEM_SPLASH_POTION = 301
+ITEM_LINGERING_POTION = 302
+ITEM_POTION_WATER      = 303
+ITEM_POTION_MUNDANE    = 304
+ITEM_POTION_THICK      = 305
+ITEM_POTION_REGENERATION   = 306
+ITEM_POTION_SWIFTNESS      = 307
+ITEM_POTION_FIRE_RESISTANCE = 308
+ITEM_POTION_HEALING         = 309
+ITEM_POTION_NIGHT_VISION    = 310
+ITEM_POTION_STRENGTH        = 311
+ITEM_POTION_LEAPING          = 312
+ITEM_POTION_WATER_BREATHING = 313
+ITEM_POTION_INVISIBILITY     = 314
+ITEM_POTION_SLOW_FALLING    = 315
+ITEM_POTION_SLOWNESS        = 316
+ITEM_POTION_WEAKNESS         = 317
+ITEM_POTION_POISON           = 318
+ITEM_POTION_HARMING          = 319
+ITEM_POTION_LUCK             = 320
+ITEM_POTION_TURTLE_MASTER    = 321
+ITEM_POTION_SLOWNESS_LONG     = 322
+
+# Spawn eggs (350+)
+ITEM_SPAWN_EGG_BASE = 350
+
+# Music discs (380+)
+ITEM_DISC_13 = 380
+ITEM_DISC_CAT = 381
+ITEM_DISC_BLOCKS = 382
+ITEM_DISC_CHIRP = 383
+ITEM_DISC_FAR = 384
+ITEM_DISC_MALL = 385
+ITEM_DISC_MELLOHI = 386
+ITEM_DISC_STAL = 387
+ITEM_DISC_STRAD = 388
+ITEM_DISC_WARD = 389
+ITEM_DISC_11 = 390
+ITEM_DISC_WAIT = 391
+ITEM_DISC_OTHERSIDE = 392
+ITEM_DISC_5 = 393
+ITEM_DISC_PIGSTEP = 394

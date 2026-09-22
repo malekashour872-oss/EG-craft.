@@ -1,0 +1,19 @@
+{
+  "name": "EG Craft — لعبة صندوق الرمال",
+  "short_name": "EG Craft",
+  "description": "EG Craft — لعبة صندوق رمال عربية. ملكية مالك حسن عاشور © 2025.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0a080e",
+  "theme_color": "#0a080e",
+  "icons": [
+    { "src": "icon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "categories": ["games", "entertainment"],
+  "author": "Malik Hassan Ashour (مالك حسن عاشور) © 2025"
+}
